@@ -1,0 +1,96 @@
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1, 2, 82);
+    color: white;
+    font-family: fantasy;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    background: url("./familyfeud-logo-baby-edition.png") no-repeat center center fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.btn {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: rgb(224, 183, 47) .25rem solid;
+    font-size: 1.25rem;
+    font-family: fantasy;
+    cursor: pointer;
+    color: rgb(1, 2, 82);
+    margin-bottom: .5rem;
+}
+
+div#btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div#start-game {
+    margin-bottom: 7rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: rgb(224, 183, 47) .25rem solid;
+    font-size: 1.25rem;
+    font-family: fantasy;
+    cursor: pointer;
+    color: rgb(1, 2, 82);
+}
+
+#question-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#question, #thanks {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.answer-box {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 2.5rem;
+    width: 45vw;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 3rem;
+    padding: .5rem;
+    border: rgb(224, 183, 47) .25rem solid;
+    border-radius: 11px;
+}
+
+.answer-box.not-answered {
+    justify-content: center;
+}
+
+.not-answered .answer {
+    /* visibility: hidden; */
+    display: none;
+}
+
+
+div#answers {
+    max-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vw;
+}
