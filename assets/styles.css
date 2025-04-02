@@ -197,12 +197,6 @@ button:hover {
     }
 }
 
-
-
-
-
-
-
 .jeopardy-board {
     width: 100%;
     max-width: 1200px;
@@ -231,4 +225,70 @@ button:hover {
 .question-cell:hover {
     transform: scale(1.02);
     box-shadow: 0 0 10px rgba(255, 242, 0, 0.5);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(13, 38, 227);
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 999;
+    display: none;
+    text-align: center;
+}
+.popup.show {
+    display: block;
+}
+
+.popup-question{
+    color: black;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 1rem auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.back-button {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.answer{
+    color: green;
 }
