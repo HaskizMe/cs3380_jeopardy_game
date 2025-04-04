@@ -276,6 +276,7 @@ button:hover {
 }
 
 .back-button {
+    color: white;
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
@@ -290,5 +291,19 @@ button:hover {
 }
 
 .answer{
+    background-color: white;
     color: green;
+}
+
+.popup-options {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.option {
+    background-color: #f0f0f0;
+    color: black;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
 }

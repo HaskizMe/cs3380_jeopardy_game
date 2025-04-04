@@ -1,3 +1,4 @@
+// The main game board
 let createGameBoard = (questions) => {
     return `
         <div class="jeopardy-board" style="transition: all 0.3s ease-in-out;">
